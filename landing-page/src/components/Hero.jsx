@@ -42,7 +42,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{backgroundColor: '#eff5e1'}}>
+    <div className="min-h-screen relative overflow-hidden" style={{backgroundColor: '#fefff4'}}>
       {/* Main Content Container */}
       <div className="relative px-6" style={{backgroundColor: '#fefff4'}}>
         {/* Left Side Content - hidden on mobile, visible on md+ */}
@@ -52,14 +52,14 @@ export default function HeroSection() {
               <span key={i} className="word" style={{ transition: 'opacity 0.4s' }}>{word} </span>
             ))}
           </p>
-          <button className="bg-black text-white px-9 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors translate-y-68 translate-x-8">
+          <button className="bg-[#2d3b36] text-white px-9 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors translate-y-68 translate-x-8">
             Shop Now
           </button>
         </div>
 
         {/* Center Content - GLOW NATURALLY */}
         <div className="text-center pt-4 pb-8">
-          <h1 className="text-5xl md:text-6xl font-bold text-black leading-tight tracking-wide" ref={textRef}>
+          <h1 className="text-5xl md:text-6xl font-bold text-[#2d3b36] leading-tight tracking-wide" ref={textRef}>
             <span>GLOW</span><br />
             <span>NATUR-</span><br />
             <span>ALLY</span>
@@ -71,7 +71,7 @@ export default function HeroSection() {
                 <span key={i} className="word" style={{ transition: 'opacity 0.4s' }}>{word} </span>
               ))}
             </p>
-            <button className="bg-black text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+            <button className="bg-[#2d3b36] text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
               Shop Now
             </button>
           </div>
@@ -90,7 +90,7 @@ export default function HeroSection() {
 
         {/* Centered overlay SKINCARE text */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <h2 className="text-[10rem] md:text-[16rem] font-black text-gray-900 leading-none tracking-[0.1em] select-none translate-y-28">
+          <h2 className="text-[10rem] md:text-[16rem] font-black text-[#2d3b36] leading-none tracking-[0.1em] select-none translate-y-28">
             SKINCARE
           </h2>
         </div>
@@ -120,9 +120,6 @@ export default function HeroSection() {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full hidden items-center justify-center bg-gray-300 text-gray-500 text-xs">
-                    No Image
-                  </div>
                 </div>
                 <span>While giving you an invigorating cleansing experience.</span>
               </div>

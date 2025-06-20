@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="flex flex-col justify-center items-start md:items-end md:text-right">
               <p className="text-base sm:text-lg text-gray-300 mb-1 sm:mb-2">Get in Touch</p>
               <a
-                href="https://contact.skincare.com"
+              
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg sm:text-2xl font-light text-white hover:underline"
@@ -41,25 +41,25 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 pb-2 sm:pb-4">
           {/* Social Media Links */}
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 md:space-x-12">
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
+            <a className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
               Facebook
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
+            <a  className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
               Instagram
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
+            <a  className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
               YouTube
             </a>
           </div>
           {/* Legal Links */}
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 md:space-x-12">
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
+            <a  className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
               Terms of Service
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
+            <a  className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
               Privacy Policy
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
+            <a className="text-white hover:text-gray-300 transition-colors duration-200 text-base sm:text-lg">
               Cookies Policy
             </a>
           </div>

@@ -21,7 +21,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header ref={navRef} className="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
+    <header ref={navRef} className="w-full fixed top-0 left-0 z-50 bg-[#fefff4] shadow-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-xl font-bold text-black">SKINCARE</div>
         {/* Desktop Nav */}

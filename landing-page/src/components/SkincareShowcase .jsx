@@ -44,7 +44,8 @@ export default function SkincareShowcase() {
 
   // Responsive: use 1 column on mobile, 3 on md+
   return (
-    <div className="min-h-screen bg-gray-50 p-4 sm:p-8">
+    <div className="min-h-screen bg-[
+#fefff4] p-4 sm:p-8">
       {/* Header */}
       <div className="max-w-6xl mx-auto">
         {/* Navigation and Title */}
@@ -55,7 +56,7 @@ export default function SkincareShowcase() {
             </span>
           </div>
           <div className="text-center flex-1">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-light text-gray-800 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-light text-[#2d3b36] leading-tight font-semibold">
               Skincare That Brings Out<br />
               Your Natural Radiance
             </h1>
