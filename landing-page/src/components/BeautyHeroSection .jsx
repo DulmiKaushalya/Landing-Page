@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 const BeautyHeroSection = () => {
   const containerRef = useRef(null);
@@ -28,30 +28,42 @@ const BeautyHeroSection = () => {
       opacity: 1,
       scale: 1,
       duration: 2,
-      ease: "power2.out"
+      ease: "power2.out",
     })
-    // Headline entrance
-    .to(headline, {
-      opacity: 1,
-      y: 0,
-      duration: 1.2,
-      ease: "power3.out"
-    }, "-=1.5")
-    // Button entrance
-    .to(button, {
-      opacity: 1,
-      y: 0,
-      duration: 0.8,
-      ease: "back.out(1.7)"
-    }, "-=0.8")
-    // Decorative elements entrance
-    .to(decorativeElements, {
-      opacity: 1,
-      scale: 1,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power2.out"
-    }, "-=0.5");
+      // Headline entrance
+      .to(
+        headline,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.2,
+          ease: "power3.out",
+        },
+        "-=1.5"
+      )
+      // Button entrance
+      .to(
+        button,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "back.out(1.7)",
+        },
+        "-=0.8"
+      )
+      // Decorative elements entrance
+      .to(
+        decorativeElements,
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power2.out",
+        },
+        "-=0.5"
+      );
 
     // Floating animation for decorative elements
     decorativeElements.forEach((element, index) => {
@@ -64,7 +76,7 @@ const BeautyHeroSection = () => {
           repeat: -1,
           yoyo: true,
           ease: "sine.inOut",
-          delay: index * 0.5
+          delay: index * 0.5,
         });
       }
     });
@@ -75,18 +87,18 @@ const BeautyHeroSection = () => {
       duration: 20,
       repeat: -1,
       yoyo: true,
-      ease: "sine.inOut"
+      ease: "sine.inOut",
     });
 
     // Button hover animations
     const buttonElement = button;
-    
+
     const handleMouseEnter = () => {
       gsap.to(buttonElement, {
         scale: 1.05,
         y: -2,
         duration: 0.3,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     };
 
@@ -95,18 +107,18 @@ const BeautyHeroSection = () => {
         scale: 1,
         y: 0,
         duration: 0.3,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     };
 
-    buttonElement.addEventListener('mouseenter', handleMouseEnter);
-    buttonElement.addEventListener('mouseleave', handleMouseLeave);
+    buttonElement.addEventListener("mouseenter", handleMouseEnter);
+    buttonElement.addEventListener("mouseleave", handleMouseLeave);
 
     // Parallax effect on mouse move
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
-      
+
       const xPercent = (clientX / innerWidth - 0.5) * 2;
       const yPercent = (clientY / innerHeight - 0.5) * 2;
 
@@ -114,7 +126,7 @@ const BeautyHeroSection = () => {
         x: xPercent * 10,
         y: yPercent * 10,
         duration: 1,
-        ease: "power2.out"
+        ease: "power2.out",
       });
 
       gsap.to(decorativeElements, {
@@ -122,23 +134,23 @@ const BeautyHeroSection = () => {
         y: yPercent * 20,
         duration: 1,
         ease: "power2.out",
-        stagger: 0.1
+        stagger: 0.1,
       });
     };
 
-    container.addEventListener('mousemove', handleMouseMove);
+    container.addEventListener("mousemove", handleMouseMove);
 
     // Cleanup
     return () => {
-      buttonElement.removeEventListener('mouseenter', handleMouseEnter);
-      buttonElement.removeEventListener('mouseleave', handleMouseLeave);
-      container.removeEventListener('mousemove', handleMouseMove);
+      buttonElement.removeEventListener("mouseenter", handleMouseEnter);
+      buttonElement.removeEventListener("mouseleave", handleMouseLeave);
+      container.removeEventListener("mousemove", handleMouseMove);
       tl.kill();
     };
   }, []);
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className="relative w-full h-screen overflow-hidden rounded-2xl cursor-none"
     >
@@ -147,7 +159,7 @@ const BeautyHeroSection = () => {
         ref={backgroundRef}
         className="absolute inset-7 bg-cover bg-center bg-no-repeat rounded-2xl"
         style={{
-          backgroundImage: `url('/images/BeautyHeroSection.png')`
+          backgroundImage: `url('/images/BeautyHeroSection.png')`,
         }}
       >
         {/* Bottom blur gradient overlay */}
@@ -157,7 +169,7 @@ const BeautyHeroSection = () => {
       {/* Content Container */}
       <div className="relative z-10 flex flex-col items-center justify-end h-full px-6 text-center pb-20">
         {/* Main Headline */}
-        <h1 
+        <h1
           ref={headlineRef}
           className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-8 max-w-4xl"
         >
@@ -167,7 +179,7 @@ const BeautyHeroSection = () => {
         </h1>
 
         {/* CTA Button */}
-        <button 
+        <button
           ref={buttonRef}
           className="bg-white text-gray-800 px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg cursor-pointer"
         >
@@ -176,16 +188,16 @@ const BeautyHeroSection = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div 
-        ref={el => decorativeRefs.current[0] = el}
+      <div
+        ref={(el) => (decorativeRefs.current[0] = el)}
         className="absolute top-10 left-10 w-20 h-20 bg-white bg-opacity-10 rounded-full blur-xl"
       ></div>
-      <div 
-        ref={el => decorativeRefs.current[1] = el}
+      <div
+        ref={(el) => (decorativeRefs.current[1] = el)}
         className="absolute bottom-20 right-20 w-32 h-32 bg-white bg-opacity-5 rounded-full blur-2xl"
       ></div>
-      <div 
-        ref={el => decorativeRefs.current[2] = el}
+      <div
+        ref={(el) => (decorativeRefs.current[2] = el)}
         className="absolute top-1/3 right-10 w-16 h-16 bg-white bg-opacity-10 rounded-full blur-lg"
       ></div>
     </div>
