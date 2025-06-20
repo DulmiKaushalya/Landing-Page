@@ -220,8 +220,7 @@ const FAQ = () => {
   return (
     <div
       ref={containerRef}
-      className="bg-[
-#fefff4] min-h-screen py-12 px-4 sm:px-6 lg:px-8"
+      className="bg-[#fefff4] min-h-screen py-12 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -238,25 +237,27 @@ const FAQ = () => {
             </div>
 
             <div className="absolute bottom-20 left-24 bg-[#eff5e1] text-black rounded-full px-6 py-3 flex items-center space-x-5 shadow-lg cursor-pointer hover:bg-[#e1edcf] transition-colors duration-300">
-      
-      {/* Icon Circle with dashed border*/}
-      <div className="p-2 rounded-full border-2 border-dashed border-[#2d3b36]">
-        <div className="w-14 h-14 flex items-center justify-center bg-[#2d3b36] rounded-full">
-          <Headphones size={24} className="text-white" />
-        </div>
-      </div>
+              {/* Icon Circle with dashed border*/}
+              <div className="p-2 rounded-full border-2 border-dashed border-[#2d3b36]">
+                <div className="w-14 h-14 flex items-center justify-center bg-[#2d3b36] rounded-full">
+                  <Headphones size={24} className="text-white" />
+                </div>
+              </div>
 
-      {/* Text Content */}
-      <div className="leading-snug">
-        <div className="text-sm font-medium">24/7 <span>We’re Here</span></div>
-        <div className="text-sm text-gray-800">to Help You</div>
-      </div>
-    </div>
+              {/* Text Content */}
+              <div className="leading-snug">
+                <div className="text-sm font-medium">
+                  24/7 <span>We’re Here</span>
+                </div>
+                <div className="text-sm text-gray-800">to Help You</div>
+              </div>
+            </div>
           </div>
 
           {/* Right side - FAQ */}
-          <div className="space-y-8 bg-[
-#fefff4] ">
+          <div
+            className="space-y-8 bg-[#fefff4] "
+          >
             {/* Header */}
             <div ref={headerRef}>
               <div className="inline-flex items-center bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm mb-6">
@@ -269,19 +270,18 @@ const FAQ = () => {
             </div>
 
             {/* FAQ Items */}
-            <div className="space-y-3 bg-[
-#fefff4]">
+            <div
+              className="space-y-3 bg-[#fefff4]"
+            >
               {faqItems.map((item, index) => (
                 <div
                   key={index}
                   ref={(el) => (faqItemsRef.current[index] = el)}
-                  className="border border-gray-200 rounded-2xl overflow-hidden bg-[
-#fefff4] shadow-sm hover:shadow-md transition-shadow duration-300"
+                  className="border border-gray-200 rounded-2xl overflow-hidden bg-[#fefff4] shadow-sm hover:shadow-md transition-shadow duration-300"
                 >
                   <button
                     onClick={() => toggleItem(index)}
-                    className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-[
-#fefff4] transition-colors"
+                    className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-[#fefff4] transition-colors"
                   >
                     <span className="text-gray-900 font-medium text-base">
                       {item.question}
@@ -299,8 +299,9 @@ const FAQ = () => {
                     className="overflow-hidden"
                     style={{ height: expandedItems[index] ? "auto" : 0 }}
                   >
-                    <div className="px-6 pb-5 bg-[
-#fefff4]">
+                    <div
+                      className="px-6 pb-5 bg-[#fefff4]"
+                    >
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {item.answer}
                       </p>
