@@ -147,7 +147,7 @@ const BeautyHeroSection = () => {
         ref={backgroundRef}
         className="absolute inset-7 bg-cover bg-center bg-no-repeat rounded-2xl"
         style={{
-          backgroundImage: `url('../../public/images/BeautyHeroSection.png')`
+          backgroundImage: `url('/images/BeautyHeroSection.png')`
         }}
       >
         {/* Bottom blur gradient overlay */}

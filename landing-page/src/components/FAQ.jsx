@@ -208,7 +208,7 @@ const FAQ = () => {
               {/* Full Image Background */}
               <img 
                 ref={imageRef}
-                src="../../public/images/bodylotion.png"
+                src="/images/bodylotion.png"
                 alt="Skincare Product"
                 className="w-full h-full object-cover rounded-3xl"
               />

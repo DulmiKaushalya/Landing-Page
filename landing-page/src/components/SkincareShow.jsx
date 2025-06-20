@@ -7,7 +7,7 @@ export default function SkincareShow() {
       id: 1,
       name: "ALYA SKIN CLEANSER.",
       price: "$26.99",
-      image: "../../public/images/alyaskin.png",
+      image: "/images/alyaskin.png",
       bgColor: "bg-blue-50",
       description: "Foaming Micellar Water"
     },
@@ -15,7 +15,7 @@ export default function SkincareShow() {
       id: 2,
       name: "RITUAL OF SAKURA.",
       price: "$27.99",
-      image: "../../public/images/sakura.png",
+      image: "/images/sakura.png",
       bgColor: "bg-emerald-900",
       description: "Soothing Face Cream"
     },
@@ -23,7 +23,7 @@ export default function SkincareShow() {
       id: 3,
       name: "THE BODY LOTION.",
       price: "$19.99",
-      image: "../../public/images/bodylotion.png",
+      image: "/images/bodylotion.png",
       bgColor: "bg-gray-200",
       description: "Moisturizing Body Care"
     }
