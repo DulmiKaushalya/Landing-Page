@@ -81,7 +81,7 @@ export default function HeroSection() {
         <div className="absolute top-8 right-6 z-20">
           <div className="w-34 h-32 bg-gradient-to-b from-purple-300 to-purple-400 rounded-lg shadow-lg overflow-hidden">
             <img 
-              src="../../public/images/product2.png" 
+              src="/images/product2.png" 
               alt="LUNA skincare product" 
               className="w-full h-full object-cover"
             />
@@ -99,7 +99,7 @@ export default function HeroSection() {
         <div className="relative flex justify-center items-center mt-4 mb-12 z-10">
           <div className="relative w-100 h-96 bg-gradient-to-br from-amber-100 via-green-100 to-green-200 rounded-3xl shadow-2xl overflow-hidden">
             <img 
-              src="../../public/images/product1.png" 
+              src="/images/product1.png" 
               alt="Woman with natural skincare routine" 
               className="w-full h-full object-cover"
               onError={(e) => {
@@ -112,7 +112,7 @@ export default function HeroSection() {
               <div className="flex items-center space-x-2">
                 <div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 overflow-hidden">
                   <img
-                    src="../../public/images/product2.png"
+                    src="/images/product2.png"
                     alt="Product icon"
                     className="w-full h-full object-cover"
                     onError={(e) => {

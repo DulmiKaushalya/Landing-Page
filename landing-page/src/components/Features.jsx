@@ -64,7 +64,7 @@ export default function SkincareFeatures() {
           
 <div className="relative rounded-2xl overflow-hidden aspect-[3/4] w-full max-w-md sm:max-w-lg mx-auto">
   <img
-    src="../../public/images/SkincareFeatures.png"
+    src="/images/SkincareFeatures.png"
     alt="Woman applying under-eye patches"
     className="w-full h-full object-cover"
   />
