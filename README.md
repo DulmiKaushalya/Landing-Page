@@ -73,7 +73,7 @@ cd landing-page
    
 
 **Deployment**
-   Navigate to landing-page-x1uu.vercel.app to view the application
+   Navigate to `landing-page-x1uu.vercel.app` to view the application
    ```
 
 
