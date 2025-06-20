@@ -13,7 +13,6 @@ landing-page/
 │   │   ├── alyaskin.png
 │   │   ├── BeautyHeroSection.png
 │   │   ├── bodylotion.png
-│   │   ├── ChatGPT Image Ju...
 │   │   ├── product1.png
 │   │   ├── product2.png
 │   │   ├── sakura.png
